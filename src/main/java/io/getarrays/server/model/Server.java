@@ -18,7 +18,7 @@ public class Server {
     private Long id;
     @Column(unique = true)
     @NotEmpty(message = "IP Address cannot be empty or null")
-    private String ipaddress;
+    private String ipAddress;
     private String name;
     private String memory;
     private String type;
