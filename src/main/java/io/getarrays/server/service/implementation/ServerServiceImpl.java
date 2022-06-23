@@ -80,6 +80,7 @@ public class ServerServiceImpl implements ServerService {
         return ServletUriComponentsBuilder.fromCurrentContextPath().path("/server/image/" + imageNames[new Random().nextInt(4)]).toUriString();
     }
 
+    //    isReachable is never used in tutorial video
     private boolean isReachable(String ipAddress, int port, int timeOut) {
         try {
             try (Socket socket = new Socket()) {
