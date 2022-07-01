@@ -60,7 +60,7 @@ export class ServerService {
   delete$ = (serverId: number) =>
     <Observable<CustomResponse>>(
       this.http
-        .delete<CustomResponse>(`${this.apiUrl}/server/ping/${serverId}`)
+        .delete<CustomResponse>(`${this.apiUrl}/server/delete/${serverId}`)
         .pipe(tap(console.log), catchError(this.handleError))
     );
 
